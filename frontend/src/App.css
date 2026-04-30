@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #0f172a; /* deep navy */
+  color: #e2e8f0;
+}
+
+/* Main container */
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #f8fafc;
+}
+
+.header p {
+  color: #94a3b8;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-section input {
+  width: 400px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: white;
+}
+
+.input-section input::placeholder {
+  color: #64748b;
+}
+
+.input-section button {
+  padding: 12px 20px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-section button:hover {
+  background: #4f46e5;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.card {
+  flex: 1;
+  min-width: 150px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.card h4 {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #f8fafc;
+}
+
+/* Sections */
+.section {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #f1f5f9;
+}
+
+/* Comments */
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-list li {
+  padding: 10px;
+  border-bottom: 1px solid #334155;
+  color: #cbd5f5;
+}
