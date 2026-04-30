@@ -36,10 +36,10 @@ function App() {
         value={url}
         onChange={(e) => setUrl(e.target.value)}
       />
-      <button onClick={handleAnalyze}>Analyze</button>
+      <button onClick={handleAnalyze}>Analyse</button>
     </div>
 
-    {loading && <p style={{ textAlign: "center" }}>Analyzing...</p>}
+    {loading && <p style={{ textAlign: "center" }}>Analysing...</p>}
 
     {data && (
       <>

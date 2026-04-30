@@ -6,14 +6,15 @@ load_dotenv()
 
 API_KEY = os.getenv("YOUTUBE_API_KEY")
 
-def get_video_comments(video_id, max_results=100):
+def get_video_comments(video_id, max_results=200):
     youtube = build('youtube', 'v3', developerKey=API_KEY)
     
     comments = []
     request = youtube.commentThreads().list(
         part='snippet',
         videoId=video_id,
-        maxResults=100,
+        maxResults=200,
+        order = "relevance",
         textFormat="plainText"
     )
 
